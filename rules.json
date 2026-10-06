@@ -1,0 +1,238 @@
+[
+    {
+        "problem": "Tomato Early Blight",
+        "category": "Disease",
+
+        "conditions": {
+            "crop": "tomato",
+            "symptom": "brown_circular_spots",
+            "weather": "humid"
+        },
+
+        "explanations": {
+            "crop": "The selected crop is tomato.",
+            "symptom": "Brown circular spots were observed on the leaves.",
+            "weather": "Humid weather can favor fungal disease development."
+        },
+
+        "treatment": [
+            "Remove severely infected leaves.",
+            "Improve air circulation around the plants.",
+            "Use locally approved fungicide according to the product label."
+        ],
+
+        "prevention": [
+            "Avoid prolonged leaf wetness.",
+            "Maintain good field sanitation.",
+            "Avoid unnecessary overhead irrigation."
+        ]
+    },
+
+
+    {
+        "problem": "Rice Blast Risk",
+        "category": "Disease",
+
+        "conditions": {
+            "crop": "rice",
+            "symptom": "diamond_leaf_spots",
+            "weather": "humid"
+        },
+
+        "explanations": {
+            "crop": "The selected crop is rice.",
+            "symptom": "Diamond-shaped spots were observed on the leaves.",
+            "weather": "Humid conditions can increase the risk of rice blast."
+        },
+
+        "treatment": [
+            "Inspect nearby plants for similar symptoms.",
+            "Avoid excessive nitrogen application.",
+            "Follow local agricultural recommendations for disease management."
+        ],
+
+        "prevention": [
+            "Use disease-resistant varieties where available.",
+            "Maintain balanced crop nutrition.",
+            "Keep the field clean and monitor symptoms regularly."
+        ]
+    },
+
+
+    {
+        "problem": "Wheat Leaf Disease Risk",
+        "category": "Disease",
+
+        "conditions": {
+            "crop": "wheat",
+            "symptom": "yellowing_leaves",
+            "weather": "humid"
+        },
+
+        "explanations": {
+            "crop": "The selected crop is wheat.",
+            "symptom": "Yellowing leaves were observed.",
+            "weather": "Humid conditions can increase the risk of some wheat diseases."
+        },
+
+        "treatment": [
+            "Inspect leaves carefully for additional spots or rust-like symptoms.",
+            "Remove severely affected plant material where practical.",
+            "Follow local agricultural recommendations before applying treatment."
+        ],
+
+        "prevention": [
+            "Use healthy and suitable seed.",
+            "Maintain balanced crop nutrition.",
+            "Regularly monitor the crop for disease symptoms."
+        ]
+    },
+
+
+    {
+        "problem": "Maize Leaf Disease Risk",
+        "category": "Disease",
+
+        "conditions": {
+            "crop": "maize",
+            "symptom": "brown_circular_spots",
+            "weather": "humid"
+        },
+
+        "explanations": {
+            "crop": "The selected crop is maize.",
+            "symptom": "Brown spots were observed on the leaves.",
+            "weather": "Humid conditions can favor fungal leaf diseases."
+        },
+
+        "treatment": [
+            "Inspect surrounding plants for spreading symptoms.",
+            "Remove severely affected leaves where practical.",
+            "Use locally approved treatment according to agricultural guidance."
+        ],
+
+        "prevention": [
+            "Maintain good field sanitation.",
+            "Avoid prolonged leaf wetness.",
+            "Monitor the crop regularly."
+        ]
+    },
+
+
+    {
+        "problem": "Nitrogen Deficiency",
+        "category": "Nutrient Deficiency",
+
+        "conditions": {
+            "symptom": "yellowing_old_leaves",
+            "soil": "low_nitrogen"
+        },
+
+        "explanations": {
+            "symptom": "Older leaves are showing yellowing.",
+            "soil": "The soil condition indicates low nitrogen."
+        },
+
+        "treatment": [
+            "Confirm the deficiency with a soil test if possible.",
+            "Apply a suitable nitrogen fertilizer according to local recommendations.",
+            "Avoid excessive fertilizer application."
+        ],
+
+        "prevention": [
+            "Test soil fertility regularly.",
+            "Maintain balanced crop nutrition.",
+            "Add organic matter where appropriate."
+        ]
+    },
+
+
+    {
+        "problem": "Water Stress / Under-Irrigation",
+        "category": "Water Stress",
+
+        "conditions": {
+            "symptom": "wilting",
+            "irrigation": "low",
+            "weather": "hot_dry"
+        },
+
+        "explanations": {
+            "symptom": "The crop is showing wilting.",
+            "irrigation": "Irrigation is marked as low.",
+            "weather": "Hot and dry weather increases crop water requirements."
+        },
+
+        "treatment": [
+            "Check soil moisture.",
+            "Provide adequate irrigation according to crop requirements.",
+            "Avoid both severe drying and excessive irrigation."
+        ],
+
+        "prevention": [
+            "Monitor soil moisture regularly.",
+            "Adjust irrigation according to crop growth stage.",
+            "Use mulching where appropriate to reduce water loss."
+        ]
+    },
+
+
+    {
+        "problem": "Waterlogging / Excess Moisture",
+        "category": "Water Stress",
+
+        "conditions": {
+            "symptom": "yellowing_leaves",
+            "soil": "heavy_clay",
+            "weather": "heavy_rain",
+            "irrigation": "high"
+        },
+
+        "explanations": {
+            "symptom": "Yellowing leaves can occur when roots are stressed by excess moisture.",
+            "soil": "Heavy clay soil can drain water slowly.",
+            "weather": "Heavy rainfall can increase waterlogging.",
+            "irrigation": "High irrigation can increase excess moisture."
+        },
+
+        "treatment": [
+            "Improve field drainage.",
+            "Avoid unnecessary irrigation.",
+            "Check the root zone before applying more water."
+        ],
+
+        "prevention": [
+            "Maintain proper drainage.",
+            "Avoid excessive irrigation.",
+            "Monitor soil moisture after heavy rainfall."
+        ]
+    },
+
+
+    {
+        "problem": "Aphid / Sap-Sucking Pest Risk",
+        "category": "Pest",
+
+        "conditions": {
+            "symptom": "visible_small_insects",
+            "weather": "warm"
+        },
+
+        "explanations": {
+            "symptom": "Small insects are visible on the crop.",
+            "weather": "Warm conditions can support increased pest activity."
+        },
+
+        "treatment": [
+            "Inspect the underside of leaves and tender shoots.",
+            "Encourage beneficial insects where possible.",
+            "Use approved pest-control products only when necessary."
+        ],
+
+        "prevention": [
+            "Scout the crop regularly.",
+            "Remove heavily infested plant parts where practical.",
+            "Maintain field hygiene."
+        ]
+    }
+]

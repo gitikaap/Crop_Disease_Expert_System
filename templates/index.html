@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AgriGuide | Crop Advisory Expert System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header>
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🌱
+        </div>
+
+        <div>
+
+            <h1>
+                AgriGuide
+            </h1>
+
+            <p>
+                Crop Disease & Agronomic Advisory System
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-badge">
+        🧠 Knowledge-Based AI
+    </div>
+
+</header>
+
+
+
+<!-- =====================================
+     MAIN CONTENT
+===================================== -->
+
+<div class="container">
+
+
+    <!-- =================================
+         HERO SECTION
+    ================================== -->
+
+    <section class="hero">
+
+        <small>
+            SMART FARMING • EXPERT SYSTEM
+        </small>
+
+
+        <h2>
+            Understand your crop.
+            <br>
+
+            <span>
+                Act before it gets worse.
+            </span>
+        </h2>
+
+
+        <p>
+            Enter your crop observations and
+            AgriGuide will analyse them using
+            expert production rules to identify
+            possible diseases, pests, nutrient
+            deficiencies and water-related problems.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================
+         INPUT CARD
+    ================================== -->
+
+    <section class="card">
+
+        <h3 id="cropObservationTitle">
+    🌾 Crop Observation
+</h3>
+
+        <p class="card-subtitle" id="observationSubtitle">
+    Tell us what you are seeing in the field.
+</p>
+
+
+        <div class="form-grid">
+
+
+            <!-- CROP -->
+
+            <div class="form-group">
+
+                <label for="crop" id="cropLabel">
+    Crop
+</label>
+
+                <select id="crop">
+
+                    <option value="tomato">
+                        Tomato
+                    </option>
+
+                    <option value="rice">
+                        Rice
+                    </option>
+
+                    <option value="wheat">
+                        Wheat
+                    </option>
+
+                    <option value="maize">
+                        Maize
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- GROWTH STAGE -->
+
+            <div class="form-group">
+
+                <label for="growth_stage" id="growthLabel">
+    Growth Stage
+</label>
+
+                <select id="growth_stage">
+
+                    <option value="seedling">
+                        Seedling
+                    </option>
+
+                    <option value="vegetative">
+                        Vegetative
+                    </option>
+
+                    <option value="flowering">
+                        Flowering
+                    </option>
+
+                    <option value="fruiting">
+                        Fruiting
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- SYMPTOM -->
+
+            <div class="form-group">
+
+               <label for="symptom" id="symptomLabel">
+    Main Symptom
+</label>
+
+                <select id="symptom">
+
+                    <option value="brown_circular_spots">
+                        Brown circular spots
+                    </option>
+
+                    <option value="diamond_leaf_spots">
+                        Diamond-shaped leaf spots
+                    </option>
+
+                    <option value="yellowing_old_leaves">
+                        Yellowing older leaves
+                    </option>
+
+                    <option value="yellowing_leaves">
+                        Yellowing leaves
+                    </option>
+
+                    <option value="slow_growth">
+                        Slow growth
+                    </option>
+
+                    <option value="wilting">
+                        Wilting
+                    </option>
+
+                    <option value="dry_leaf_edges">
+                        Dry leaf edges
+                    </option>
+
+                    <option value="leaf_curling">
+                        Leaf curling
+                    </option>
+
+                    <option value="root_rot">
+                        Root rot
+                    </option>
+
+                    <option value="sticky_leaves">
+                        Sticky leaves
+                    </option>
+
+                    <option value="visible_small_insects">
+                        Visible small insects
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- SOIL -->
+
+            <div class="form-group">
+
+                <label for="soil" id="soilLabel">
+    Soil Condition
+</label>
+
+                <select id="soil">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="low_nitrogen">
+                        Low nitrogen
+                    </option>
+
+                    <option value="heavy_clay">
+                        Heavy clay
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- WEATHER -->
+
+            <div class="form-group">
+
+                <label for="weather" id="weatherLabel">
+    Weather
+</label>
+
+                <select id="weather">
+
+                    <option value="warm">
+                        Warm
+                    </option>
+
+                    <option value="humid">
+                        Humid
+                    </option>
+
+                    <option value="hot_dry">
+                        Hot & Dry
+                    </option>
+
+                    <option value="heavy_rain">
+                        Heavy Rain
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- IRRIGATION -->
+
+            <div class="form-group">
+
+                <label for="irrigation" id="irrigationLabel">
+    Irrigation
+</label>
+
+                <select id="irrigation">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="low">
+                        Low
+                    </option>
+
+                    <option value="high">
+                        High
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ANALYSE BUTTON -->
+
+        <button
+    id="diagnoseBtn"
+    class="analyse-button">
+
+    🔍 <span id="analyseText">Analyse Crop</span>
+
+</button>
+
+    </section>
+
+
+
+    <!-- =================================
+         RESULTS
+    ================================== -->
+
+    <section class="results">
+
+        <h3 id="resultsTitle">
+    🧠 Expert System Results
+</h3>
+
+        <p class="card-subtitle" id="resultsSubtitle">
+    Your diagnosis and recommendations will appear here.
+</p>
+        <div class="language-box">
+
+    <label for="language">
+        🌐 Language
+    </label>
+
+    <select id="language">
+
+    <option value="en">
+        English
+    </option>
+
+    <option value="hi">
+        हिन्दी
+    </option>
+
+    <option value="bn">
+        বাংলা
+    </option>
+
+</select>
+
+</div>
+
+
+        <div id="results">
+
+            <p>
+                Select the crop information above
+                and click
+                <strong>Analyse Crop</strong>.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    🌱 AgriGuide • Knowledge-Based Crop
+    Advisory System
+
+    <br><br>
+
+    Educational prototype — always consult
+    qualified agricultural professionals for
+    real-world diagnosis and treatment.
+
+</footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+</html>
